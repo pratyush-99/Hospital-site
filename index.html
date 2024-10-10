@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white-100">
+    <!-- Header Section -->
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-br from-red-600 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Brand Logo -->
+        <div class="flex-shrink-0 flex items-center">        
+          <img class="" src="./Untitled design.png" height="100" width="150" >
+        </div>
+        <!-- Navigation Links (Desktop) -->
+        <div class="hidden sm:flex sm:items-center sm:ml-6">
+          <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold">Services</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold">Contact</a>
+          <button class="px-4 py-2 bg-yellow-500 text-white font-semibold rounded-md shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+            Book a Demo
+          </button>
+            <button id="login-toggle" class="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md transition-all">
+              User Login
+            </button>
+          </div>
+          <script>
+            // JavaScript to handle button text toggle
+            const button = document.getElementById('login-toggle');
+            button.addEventListener('click', () => {
+              if (button.textContent === 'User Login') {
+                button.textContent = 'Patient Login';
+              } else {
+                button.textContent = 'User Login';
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- Hero Section -->
+<section class="bg- h-screen flex items-center">
+    <!-- Left Part -->
+    <div class="w-1/2 h-full bg-white-500 flex items-center justify-center">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-black mb-4">One Stop Digital <p class="text-red-500">Healthcare</p> Solutions</h1>
+        <img class="max-w-full h-auto rounded-lg shadow-lg ml-36" src="./heart-heartbeat.gif" alt="" height="1500" width="150" >
+        <p class="text-lg text-black-300 font-semibold">Providing quality healthcare for you and your family.</p>
+        <button class="px-4 py-2 bg-yellow-500 text-white font-semibold rounded-md shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+            Book a Demo
+          </button>
+          <button class="px-4 py-2 bg-gray-200 text-black font-semibold rounded-md shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+            Contact Us
+          </button>
+      </div>
+    </div>
+    <!-- Right Part -->
+    <div class="w-1/2 h-full bg-white-100 flex items-center justify-center">
+      <img src="./image.png" alt="Hospital Image" class="max-w-full h-auto rounded-lg shadow-lg">
+    </div>
+  </section>
+<!--new-->
+      <div class="container mx-auto p-4">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="text-2xl font-bold text-gray-700"><span class="text-yellow-500">1K+</span>Patient Records</div>
+              <div class="text-2xl font-bold text-gray-700"><span class="text-yellow-500">3k+</span>Doctors</div>
+              <div class="text-2xl font-bold text-gray-700"><span class="text-yellow-500">4K+</span> Cities</div>
+              <div class="text-2xl font-bold text-gray-700"><span class="text-yellow-500">1+</span>Countries</div>
+          </div>
+  
+          <div class="overflow-x-auto">
+            <div class="flex flex-nowrap">
+              <!-- Add your scrollable content here -->
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <img src="./downoad 3.jpeg" alt="Health Plus" class="w-24 h-24 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">HEALTH PLUS</h3>
+                    <p class="text-gray-600 text-center mt-2">Multi-Location, Fiji</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <img src="./OIP (2).jpeg" alt="Secure Hospitals" class="w-24 h-24 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">SECURE HOSPITALS</h3>
+                    <p class="text-gray-600 text-center mt-2">Multi-Location, India</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <img src="./OIP (1).jpeg" alt="Excel Scan" class="w-24 h-24 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">ExcelScan</h3>
+                    <p class="text-gray-600 text-center mt-2">Nigeria</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <img src="./OIP (2).jpeg" alt="Clinica Victoria" class="w-24 h-24 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">CLINICA VICTORIA</h3>
+                    <p class="text-gray-600 text-center mt-2">Muscat</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <img src="./OIP.jpeg" alt="Zens Medical Centres" class="w-24 h-24 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">ZENS MEDICAL CENTRES</h3>
+                    <p class="text-gray-600 text-center mt-2">Multi-Location, Fiji</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <img src="./Untitled design.png" alt="Medica Hospital" class="w-24 h-24 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">medica HOSPITAL</h3>
+                    <p class="text-gray-600 text-center mt-2">Maldives</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <img src="./downoad 3.jpeg" alt="NMDC" class="w-24 h-24 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">NMDC</h3>
+                    <p class="text-gray-600 text-center mt-2">Multi-Location, India</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md">
+                    <img src="./OIP.jpeg" alt="Wiwo Specialized Hospital" class="w-24 h-24 mx-auto">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">wiwo Specialized Hospital</h3>
+                    <p class="text-gray-600 text-center mt-2">Rwanda</p>
+                </div>
+            </div>
+              <!-- Add more items here -->
+            </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center mt-8">
+              <button class="bg-red-500 hover:bg-red-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M12.95 10.707l.707-.707L8 4.293 7.293 5 11.293 9l-4.004 4.004 1.414 1.414 4.004-4.004.707.707z" />
+                  </svg>
+                  Previous
+              </button>
+              <span class="mx-2">...</span>
+              <button class="bg-green-500 hover:bg-green-400 text-black-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                  Next
+                  <svg class="fill-current w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M7.05 10.707l-.707-.707L12 4.293 12.707 5 8.707 9l4.004 4.004-1.414 1.414-4.004-4.004-.707.707z" />
+                  </svg>
+              </button>
+          </div>
+      </div>
+  <!--girls part-->
+  <section class="bg- h-screen flex items-center">
+    <!-- Left Part -->
+    <div class="w-1/2 h-full bg-white-500 flex items-center justify-center rounded-2xl shadow-xl">
+        <img class="max-w-full h-auto rounded-lg shadow-lg ml-36 shadow-lg" src="./OIP (3).jpeg" alt=""  height="500" width="500">
+      </div>
+    </div>
+    <!-- Right Part -->
+    <div class="w-1/2 h-full bg-white-100 flex items-center justify-center">
+      <div class="container mx-auto mt-10">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6">Empower with Holistic Digital Healthcare Products</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-4 font-bold text-gray-800">Clinic/Polyclinic Management Software</h2>
+                </div>
+                <p class="text-gray-600">Comprehensive Clinic Management handles Patient Dashboard, Appointment Management, Visual Speciality Casesheets, SMS/Email Notification, Easy Billing & Accounts.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-4 font-bold text-gray-800">Hospital Management Software</h2>
+                </div>
+                <p class="text-gray-600">MocDoc presents a holistic Hospital Management Software solution, built entirely on the innovative SaaS platform.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-4 font-bold text-gray-800">Lab Management</h2>
+                </div>
+                <p class="text-gray-600">
+                  Hospital Management Software solution, built entirely on the innovative SaaS platform.</p>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+  </section>
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold text-gray-800">Key Features</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-600">Bed and Resources Management</h4>
+                    <p class="mt-4 text-gray-600">Manage Bed and other Resources for patient and streamline patient interactions.</p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-600">inpatient and Outpatient Management</h4>
+                    <p class="mt-4 text-gray-600"> manages patient admissions and discharges, tracking both inpatient and outpatient records. It streamlines the process of patient registration, billing, and follow-up appointments, ensuring a smooth patient experience.</p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-600">Patient Management</h4>
+                    <p class="mt-4 text-gray-600">Centralized management of patient records, including medical history, treatment plans, and ongoing care. It ensures that all patient information is securely stored and easily accessible to healthcare providers, enhancing patient care quality.</p>
+                </div>
+                 <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-600">Appointment and Queue Management</h4>
+                    <p class="mt-4 text-gray-600">An essential tool for managing patient appointments, reducing waiting times, and optimizing the scheduling of consultations, treatments, and procedures. This system helps in maintaining an orderly flow of patients through the hospital.Communication and Collaboration: </p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-600">Communication and Collaboration</h4>
+                    <p class="mt-4 text-gray-600">Facilitates effective communication among healthcare providers, patients, and administrative staff. This module includes messaging systems, collaboration tools, and notifications to ensure that everyone involved in patient care is well-informed and coordinated.</p>
+                </div>
+                 <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-600">Analytics and Reporting</h4>
+                    <p class="mt-4 text-gray-600">Provides in-depth data analysis and reporting capabilities, offering insights into hospital performance, patient outcomes, and operational efficiency. This data-driven approach helps in identifying trends, making informed decisions, and improving hospital services.</p>
+                </div>
+                 <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-600">Training and Support</h4>
+                    <p class="mt-4 text-gray-600">Offers training programs and ongoing support for hospital staff to ensure they are proficient in using the hospital management system. This includes tutorials, help desks, and continuous learning opportunities to maintain system efficiency.</p>
+                </div>
+                <div class="p-6 bg-white shadow-md rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-600">Patient Feedback and Satisfaction</h4>
+                    <p class="mt-4 text-gray-600">This module collects and analyzes patient feedback to gauge satisfaction levels and identify areas for improvement. It helps in enhancing patient experience, building trust, and ensuring that the hospital meets the highest standards of care.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--new-->
+    <div class="flex flex-col items-center justify-center gap-10">
+      <h1 class="text-4xl font-bold text-center">Empower with Holistic Digital Healthcare Products</h1>
+      <h3 class="text-3xl font-bold text-gray-800"></h3>
+      <div class="flex flex-wrap justify-center gap-10">
+        <div class="flex flex-col items-center justify-center rounded-md bg-gray-100 p-8 text-center shadow-md">
+          <img src="./medical1.png" alt="clinic icon" width="w-20 h-20">
+        </div>      
+      </div>
+    </div>
+    <!--new-->
+    <div class="flex flex-col items-center justify-center gap-10">
+      <h1 class="text-4xl font-bold text-center">Technology of the Future</h1>
+      <h3 class="text-3xl font-bold text-gray-800">Is Outdated Technology Slowing You Down?</h3>
+      <p>Upgrade to <span class="text-red-500 text-2xl font-bold">Medical Care.</span> the cloud-based healthcare management suite that's fully integrated, secure, and reliable. Streamline your healthcare management processes.</p>
+      <div class="flex flex-wrap justify-center gap-10">
+        <div class="flex flex-col items-center justify-center rounded-md bg-gray-100 p-8 text-center shadow-md">
+          <img src="./Medical.png" alt="clinic icon" width="w-20 h-20">
+        </div>      
+      </div>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold text-gray-800">About Us</h3>
+            <p class="mt-4 text-gray-600">We provide an integrated hospital management system designed to improve operational efficiency, enhance patient care, and optimize resource utilization,reduce waiting time,save more money.</p>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold text-gray-800">Contact Us</h3>
+            <p class="mt-4 text-gray-600">For more information, get in touch with us:</p>
+            <p class="mt-2 text-blue-600 font-semibold">support@hospitalmanagement.com</p>
+            <p class="mt-2 text-gray-600">+1 (234) 567-8901</p>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Hospital Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
